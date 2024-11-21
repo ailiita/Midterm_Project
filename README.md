@@ -1,6 +1,6 @@
 # Midterm Project
 
-# Data Description
+## Data Description
 The dataset contains hourly air pollutant data from 12 air-quality monitoring site. The data, provided by the Beijing Municipal Environmental Monitoring Center.  
 This work is based on the datset from the Wanshouxigong station. 
 The datasets can be downloaded [here](https://archive.ics.uci.edu/dataset/501/beijing+multi+site+air+quality+data).    
@@ -24,7 +24,7 @@ It contains weather data (rain, pressure, temperatures, etc.) and six polluants 
 - WSPM: wind speed (m/s)
 - station: name of the air-quality monitoring site
 
-# Context and Objective
+## Context and Objective
 The Air Quality Index (AQI) is a numerical scale used to communicate the quality of air and its potential impact on human health. It measures the concentration of specific air pollutants in the atmosphere. The values range from 0 to 500. The higher the AQI, the worse the air quality and the greater the potential health risks.
 The AQI is divided into six categories that correspond to different levels of health concern:
 - 0-50: **Good** – Air quality is considered satisfactory, little or no risk for health.
@@ -51,7 +51,7 @@ I used two models to address this problem :
 
 The model was trained using 60% of the dataset and 20% was used for validation. Random Forest demonstrated the highest accuracy and was selected to train the final model.
 
-# Training the final model 
+## Training the final model 
 Model used for final training is a random forest with parameters : 
 - `n_estimators` = 3
 -  `max_depth` = 6
@@ -68,7 +68,7 @@ The accuracy on fold 1 (0.6997) was much lower compared to the other folds, whic
 This suggests that the model might performs differently according to the subset of data like for fold 1 but overall it performed well on al other folds, getting closer to the validation accuracy.  
 This difference can be explained by the class imbalance of our aqi data. 1st fold could've ended up with more examples of the minority class (*Good* and *Hazardous* for example), making it more difficult for the model to predict accurately, explaining why it got such a low accuracy.
 
-# Web service
+## Web service
 The model is deployed using flask.
 To run the model locally execute:
 ```
@@ -83,7 +83,7 @@ python prediction_test.py
 ***requirements.txt*** lists all the dependencies with their versions required to run the project. 
 The ***prediction_test.py*** provides the results of a test using some data as input. ***prediction_test.ipynb*** is the notebook that displays the result. 
 
-# Containerization
+## Containerization
 ***Dockerfile***; ***Pipfile***, ***Pifile.lock*** are provided.
 To build and start the service's Docker container, follow these instructions :
 - Download Docker Desktop
