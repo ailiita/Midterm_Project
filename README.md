@@ -44,7 +44,7 @@ Multiple analyses were conducted to predict the AQI, including the following app
 **Using only weather-related features** : All models, including Decision Tree, Random Forest, and XGBoost, exhibited low accuracy, ranging from 30% to 45%. These results suggest that the weather dataset may not be strongly predictive of the target variable.  
 **Using a combination of weather and pollutant features** : Using a combination of weather and pollutant features enabled the development of a more meaningful use case. This approach involved tuning the models to optimize accuracy while addressing and reducing overfitting, resulting in a more robust and reliable predictive model.
 
-# Model Selection and Parameter Tuning
+## Model Selection and Parameter Tuning
 I used two models to address this problem :
 - Logistic Regression (tuned regularization parameter C)
 - Random Forest (tuned `n_estimators`, `max_depth` and `min_samples_leaf`)
