@@ -85,7 +85,6 @@ The model is deployed using flask.
 To run the model locally execute:
 ```
 pip install pipenv
-pipenv install -r requirements.txt
 pipenv run waitress-serve --listen=0.0.0.0:9696 predict:app
 ``` 
 In another shell, execute : 
@@ -101,7 +100,6 @@ To build and start the service's Docker container, follow these instructions :
 - Download Docker Desktop
 - Execute :
 ```
-pipenv install requirements.txt
 docker built -t air-quality .
 docker run -it -p 9696:9696 air-quality
 ```
