@@ -90,8 +90,8 @@ To build and start the service's Docker container, follow these instructions :
 - Execute :
 ```
 pipenv install requirements.txt
-docker built -t air_quality .
-docker run -it -p 9696:9696 air_quality
+docker built -t air-quality .
+docker run -it -p 9696:9696 air-quality
 ```
 In another shell, execute : 
 ```
