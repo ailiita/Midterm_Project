@@ -1,4 +1,4 @@
-# Midterm Project
+# Midterm Project - Predict AQI
 ## Files Description 
 The repository contains 12 files :
 - [AQ_data.csv](https://github.com/ailiita/Midterm_project/blob/main/AQ_data.csv) : raw data, with missing values. Used for data preparation.
