@@ -1,0 +1,5 @@
+pandas
+numpy
+sklearn==1.5.2
+flask
+waitress
