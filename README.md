@@ -1,4 +1,16 @@
 # Midterm Project
+## Files Description 
+The repository contains 12 files :
+- [AQ_data.csv](https://github.com/ailiita/Midterm_project/blob/main/AQ_data.csv) : raw data, with missing values. Used for data preparation.
+- [AQ_data_cleaned.csv](https://github.com/ailiita/Midterm_project/blob/main/AQ_data_cleaned.csv) : cleaned data after data preparation, feature engineering. Used to train final model.
+- [notebook.ipynb](https://github.com/ailiita/Midterm_project/blob/main/notebook.ipynb) : Whole process : EDA, feature importance analysis Model selection process and parameter tuning
+- [train.py](https://github.com/ailiita/Midterm_project/blob/main/train.py) : Script that trains final model and saves it
+- [predict.py](https://github.com/ailiita/Midterm_project/blob/main/predict.py) : Script that loads model and serves it via flask
+- [prediction_test.py](https://github.com/ailiita/Midterm_project/blob/main/prediction_test.py) and [prediction_test.ipynb](https://github.com/ailiita/Midterm_project/blob/main/prediction_test.ipynb) : Script and notebook. Using input data, tests the model and gives the result of AQI prediction.
+- [requirements.txt](https://github.com/ailiita/Midterm_project/blob/main/requirements.txt) : Txt file that lists all the dependencies with their versions required to run the project. 
+- [Pipfile](https://github.com/ailiita/Midterm_project/blob/main/Pipfile)
+- [Pipfile.lock](https://github.com/ailiita/Midterm_project/blob/main/Pipfile.lock)
+- [Dockerfile](https://github.com/ailiita/Midterm_project/blob/main/Dockerfile)
 
 ## Data Description
 The dataset contains hourly air pollutant data from 12 air-quality monitoring site. The data, provided by the Beijing Municipal Environmental Monitoring Center.  
