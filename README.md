@@ -65,8 +65,8 @@ Training final model
  Validation accuracy : 0.926
 ```
 The accuracy on fold 1 (0.6997) was much lower compared to the other folds, which have accuracies between 0.857 and 0.903.   
-This suggests that the model might performs differently according to the subset of data like for fold 1 but overall it performed well on al other folds, getting closer to the validation accuracy.  
-This difference can be explained by the class imbalance of our aqi data. 1st fold could've ended up with more examples of the minority class (*Good* and *Hazardous* for example), making it more difficult for the model to predict accurately, explaining why it got such a low accuracy.
+This suggests that the model might performs differently according to the subset of data like for fold 1 but overall it performed well on all other folds, getting closer to the validation accuracy.  
+This difference can be explained by the class imbalance of our aqi data. 1st fold could've ended up with less examples of the minority class (*Good* and *Hazardous* for example), making it more difficult for the model to predict accurately, explaining why it got such a low accuracy.
 
 ## Web service
 The model is deployed using flask.
