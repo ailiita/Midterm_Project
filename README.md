@@ -100,7 +100,7 @@ To build and start the service's Docker container, follow these instructions :
 - Download Docker Desktop
 - Execute :
 ```
-docker built -t air-quality .
+docker build -t air-quality .
 docker run -it -p 9696:9696 air-quality
 ```
 In another shell, execute : 
